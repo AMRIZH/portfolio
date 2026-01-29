@@ -295,6 +295,43 @@ EXPOSE 3000
 CMD ["npm", "run", "preview"]
 ```
 
+### Docker Deployment
+
+To deploy the portfolio using Docker, follow these steps:
+
+1. **Build the Docker Image**
+   ```bash
+   docker build -t portfolio .
+   ```
+
+2. **Run the Docker Container**
+   ```bash
+   docker run -d -p 3000:3000 --name portfolio portfolio
+   ```
+
+3. **Access the Application**
+   Open your browser and navigate to:
+   ```
+   http://localhost:3000
+   ```
+
+4. **Stop the Container** (Optional)
+   To stop the running container:
+   ```bash
+   docker stop portfolio
+   ```
+
+5. **Remove the Container** (Optional)
+   To remove the container:
+   ```bash
+   docker rm portfolio
+   ```
+
+### Notes
+- Ensure Docker is installed and running on your system.
+- The application will be accessible on port 3000 by default. Update the `-p` flag in the `docker run` command to use a different port if needed.
+
+
 ## Project Structure
 
 ```
