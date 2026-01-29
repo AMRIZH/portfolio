@@ -50,7 +50,9 @@ export default function Projects({ projects }: ProjectsProps) {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          {projects.filter(p => p.featured).map((project, index) => (
+          {projects.filter(p => p.featured).map((project, index) => {
+            const projectLink = project.demo || project.github;
+            return (
             <motion.div
               key={project.id}
               variants={ANIMATION.cardItem}
@@ -61,6 +63,20 @@ export default function Projects({ projects }: ProjectsProps) {
               style={{
                 backgroundColor: mode === "dark" ? "rgba(255,255,255,0.02)" : "rgba(255,255,255,0.6)",
                 borderColor: mode === "dark" ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.05)",
+              }}
+              onClick={() => {
+                if (projectLink) {
+                  window.open(projectLink, "_blank", "noopener,noreferrer");
+                }
+              }}
+              role={projectLink ? "link" : undefined}
+              tabIndex={projectLink ? 0 : undefined}
+              onKeyDown={(e) => {
+                if (!projectLink) return;
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  window.open(projectLink, "_blank", "noopener,noreferrer");
+                }
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.borderColor = mode === "dark" ? "rgba(255,255,255,0.2)" : "rgba(0,0,0,0.1)";
@@ -115,13 +131,27 @@ export default function Projects({ projects }: ProjectsProps) {
                   {project.description}
                 </p>
                 <div className="flex items-center justify-between gap-2">
-                  <span
-                    className="inline-flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap"
-                    style={{ color: colors.primary }}
-                  >
-                    View Project
-                    <MoveUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </span>
+                  {projectLink ? (
+                    <a
+                      href={projectLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap"
+                      style={{ color: colors.primary }}
+                    >
+                      View Project
+                      <MoveUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </a>
+                  ) : (
+                    <span
+                      className="inline-flex items-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium transition-colors whitespace-nowrap"
+                      style={{ color: `${colors.primary}80` }}
+                    >
+                      View Project
+                      <MoveUpRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                    </span>
+                  )}
                   <div className="flex gap-1 flex-shrink-0">
                     {project.tags.slice(0, 2).map((tag) => (
                       <span
@@ -139,7 +169,8 @@ export default function Projects({ projects }: ProjectsProps) {
                 </div>
               </div>
             </motion.div>
-          ))}
+          );
+          })}
         </motion.div>
       </div>
     </motion.section>

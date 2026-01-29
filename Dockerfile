@@ -10,6 +10,6 @@ WORKDIR /app
 ENV NODE_ENV=production
 COPY package.json package-lock.json* pnpm-lock.yaml* ./
 RUN npm install --omit=dev
-COPY --from=build /app/dist /app/dist
+COPY --from=build /app/.output /app/.output
 EXPOSE 3000
-CMD ["npm", "run", "preview"]
+CMD ["node", ".output/server/index.mjs"]
