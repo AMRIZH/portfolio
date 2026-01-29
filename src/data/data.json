@@ -1,0 +1,297 @@
+{
+  "theme": "monochrome",
+  "github": "AMRIZH",
+  "illustration": false,
+  "profile": {
+    "name": "Amri Zadi",
+    "handle": "AMRIZH",
+    "avatar": "/images/profile.jpeg",
+    "banner": "/images/background.jpg",
+    "bio": "AI and Backend Developer",
+    "location": "Surakarta, Indonesia",
+    "resumeUrl": "https://www.linkedin.com/in/amrizadi/",
+    "email": "me@amrizadi.my.id"
+  },
+  "roles": [
+    "Software Developer",
+    "AI Engineer",
+    "Backend Developer",
+    "Cloud Engineer",
+    "Computer Vision Engineer"
+  ],
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/AMRIZH",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/amrizadi/",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/amri_zadi/",
+      "icon": "externalLink"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Docker",
+      "icon": "package",
+      "color": "#0EA5E9"
+    },
+    {
+      "name": "PyTorch",
+      "icon": "cpu",
+      "color": "#EF4444"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "zap",
+      "color": "#F59E0B"
+    },
+    {
+      "name": "Flutter",
+      "icon": "smartphone",
+      "color": "#3B82F6"
+    },
+    {
+      "name": "Android Studio",
+      "icon": "smartphone",
+      "color": "#10B981"
+    },
+    {
+      "name": "Flask",
+      "icon": "code",
+      "color": "#8B5CF6"
+    },
+    {
+      "name": "FastAPI",
+      "icon": "rocket",
+      "color": "#14B8A6"
+    },
+    {
+      "name": "Django",
+      "icon": "layers",
+      "color": "#22C55E"
+    },
+    {
+      "name": "Postgres",
+      "icon": "database",
+      "color": "#6366F1"
+    },
+    {
+      "name": "Next.js",
+      "icon": "layout",
+      "color": "#111827"
+    },
+    {
+      "name": "TanStack Start",
+      "icon": "layers",
+      "color": "#F97316"
+    },
+    {
+      "name": "Bun",
+      "icon": "package",
+      "color": "#FB7185"
+    },
+    {
+      "name": "SvelteKit",
+      "icon": "rocket",
+      "color": "#F43F5E"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Muhammadiyah University of Surakarta",
+      "role": "Laboratory Assistant",
+      "type": "Internship",
+      "period": "2023 - 2026",
+      "location": "Surakarta, Indonesia",
+      "details": [
+        "Supported the Faculty of Informatics and Communication lab operations",
+        "Mentored junior students during lab sessions and practical courses",
+        "Assisted lecturers with course delivery and lab preparation"
+      ]
+    },
+    {
+      "company": "Nara Institute of Science and Technology (NAIST)",
+      "role": "Research Intern",
+      "type": "Internship",
+      "period": "2025",
+      "location": "Nara, Japan",
+      "details": [
+        "Researched protestware and open-source software risks in the Software Engineering Laboratory",
+        "Conducted literature reviews and contributed to research findings",
+        "Collaborated with international researchers on software supply-chain topics"
+      ]
+    },
+    {
+      "company": "Astheron Technology",
+      "role": "AI Engineer and Fullstack Developer",
+      "type": "Full-time",
+      "period": "2026 - Present",
+      "location": "Surakarta, Indonesia",
+      "details": [
+        "Built AI-powered features and scalable backend services",
+        "Developed full-stack web applications for client projects",
+        "Collaborated with cross-functional teams to deliver production-ready systems"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Muhammadiyah University of Surakarta",
+      "degree": "Bachelor's Degree",
+      "field": "Informatics",
+      "period": "2022 - 2026",
+      "location": "Surakarta, Indonesia",
+      "grade": "3.9",
+      "details": [
+        "Graduated with honors",
+        "Final GPA (IPK): 3.9"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Penerjemah Sistem Isyarat Bahasa Indonesia (SIBI)",
+      "slug": "sibi-letter-recognition",
+      "description": "Offline Android app that translates SIBI finger-spelling into text using a YOLO-based detector, optimized for native, on-device inference.",
+      "image": "/images/sibi.jpg",
+      "tags": [
+        "SIBI",
+        "YOLO",
+        "Android",
+        "Flutter"
+      ],
+      "github": "https://github.com/AMRIZH/SIBI_Letter_Recognition",
+      "demo": null,
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Yoloeyes",
+      "slug": "yoloeyes",
+      "description": "Django REST API for real-time eye disease screening. Upload images, run YOLO inference, and return confidence scores and class probabilities with secure authentication.",
+      "image": "/images/yoloeyes.png",
+      "tags": [
+        "IoT",
+        "Django",
+        "YOLO",
+        "Computer Vision",
+        "REST API",
+        "Machine Learning"
+      ],
+      "github": "https://github.com/AMRIZH/yoloeyes",
+      "demo": "https://yoloeyes.iliterate.ai/",
+      "featured": true
+    },
+    {
+      "id": "3",
+      "title": "DSscan (Down Syndrome Scanner)",
+      "slug": "dsscan",
+      "description": "Computer vision web app that detects Down Syndrome indicators from facial images using a deep learning pipeline and an interactive dashboard.",
+      "image": "https://raw.githubusercontent.com/AMRIZH/DSscan/refs/heads/main/figures/dashboard.png",
+      "tags": [
+        "Flask",
+        "PyTorch",
+        "Computer Vision",
+        "Docker",
+        "SQLite"
+      ],
+      "github": "https://github.com/AMRIZH/DSscan",
+      "demo": null,
+      "featured": true
+    },
+    {
+      "id": "4",
+      "title": "Anaktangguh",
+      "slug": "anaktangguh",
+      "description": "Early childhood autism screening platform using the M-CHAT-R/F method with a streamlined questionnaire flow and instant recommendations.",
+      "image": "/images/anaktangguh.png",
+      "tags": [
+        "Web App",
+        "Healthcare",
+        "Screening"
+      ],
+      "github": null,
+      "demo": "https://anaktangguh.com/",
+      "featured": true
+    },
+    {
+      "id": "5",
+      "title": "AutoScore",
+      "slug": "autoscore",
+      "description": "LLM-assisted grading system that evaluates assignments and lab reports, generating structured feedback and rubric-aligned scores.",
+      "image": "https://raw.githubusercontent.com/AMRIZH/AutoScore/refs/heads/main/figures/dashboard.png",
+      "tags": [
+        "Flask",
+        "LLM",
+        "Docker",
+        "SQLite",
+        "Docling"
+      ],
+      "github": "https://github.com/AMRIZH/AutoScore",
+      "demo": null,
+      "featured": true
+    },
+    {
+      "id": "6",
+      "title": "WhatsApp LLM Chatbot",
+      "slug": "whatsapp-llm-chatbot",
+      "description": "WhatsApp bot powered by LLMs using wwebjs, with OpenWebUI for model selection, system prompts, and knowledge base management.",
+      "image": "/images/whatsapp.png",
+      "tags": [
+        "wwebjs",
+        "Express.js",
+        "LLM",
+        "OpenWebUI",
+        "Docker",
+        "SQLite"
+      ],
+      "github": "https://github.com/AMRIZH/whatsapp-llm-bot",
+      "demo": null,
+      "featured": true
+    },
+    {
+      "id": "7",
+      "title": "Gambling Comments Identifier",
+      "slug": "gambling-comments-identifier",
+      "description": "Text classification project that compares TF-IDF + Logistic Regression with an LSTM model to detect promotional spam in YouTube comments.",
+      "image": "/images/gambling-comments.png",
+      "tags": [
+        "LSTM",
+        "Logistic Regression",
+        "NLP",
+        "Jupyter Notebook"
+      ],
+      "github": "https://github.com/AMRIZH/GamblingCommentsIdentifier",
+      "demo": null,
+      "featured": true
+    },
+    {
+      "id": "8",
+      "title": "PyTicker",
+      "slug": "pyticker",
+      "description": "Python Tkinter timer suite featuring interval and Pomodoro modes, designed as a clean learning project for GUI and time-based workflows.",
+      "image": "/images/pyticker.png",
+      "tags": [
+        "Tkinter",
+        "Python",
+        "Pomodoro",
+        "Timer"
+      ],
+      "github": "https://github.com/AMRIZH/PyTicker",
+      "demo": null,
+      "featured": true
+    }
+  ],
+  "blogs": [],
+  "quotes": [
+    "Success has a price, and the price is hard work, dedication, and sacrifice."
+  ]
+}
